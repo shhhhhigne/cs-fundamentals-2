@@ -1,0 +1,43 @@
+Recursion
+
+In your own words, what is recursion?
+    recursion is when a function calls itself. 
+Why is it necessary to have a base case?
+    if there is no base case recursion never ends and a function calls itself forever
+
+Graphs
+
+What is a graph?
+    a graph is a series of nodes connected by edges. the nodes hold bits of data
+How is a graph different from a tree?
+    in a tree there can be no loops and each child can have only one parent whereas this is not the case in a graph
+Give an example of something that would be good to model with a graph.
+    whos been introduced at a company
+
+
+Data Structure                Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array)            O(1)    O(n)    O(1)    O(n)    O(n)    O(1)
+Linked List                    O(n)    O(n)    O(1)    O(1)    O(1)    O(n)
+Doubly-Linked List             O(n)    O(n)    O(1)    O(1)    O(1)    O(1)         
+Queue (as Array)                X       X      O(1)     X      O(n)      X
+Queue (as LL or DLL)            X       X      O(1)     X      O(1)      X
+Stack (as Array, LL, or DLL)    X       X      O(1)     X       X       O(1)
+Deque (as DLL)                  X       X      O(1)    O(1)    O(1)     O(1)
+
+
+Data Structure          Get       Add      Delete    Iterate   Memory
+Dictionary (Hash Map)   O(1)      O(1)      O(1)       O(n)    medium
+Set (Hash Map)          O(1)      O(1)      O(1)       O(n)           
+Binary Search Tree      O(log n)  O(log n)  O(log n)   O(n)    efficient  
+Tree                    O(n)      O(1)      O(1)       O(n)
+
+
+Sorting
+
+Describe in words how the Bubble Sort algorithm works.
+    it goes through the list of items holding on to the first one in the list, with that first item it compares it to each item as it climbs the list. If the item is larger than the item its comparing it to it switches places and continues on with its original item, if its not the items do not switch and it conitinues forward with the new larger item. Doing this bubbles the largest item to the end. There are some optimizations that can be made but this is the general schema
+Describe in words how the Merge Sort algorithm works.
+    it splits the list until it has a single element (each time it splits it in half) therefore guaranteeing that it is sorted (a list of one is always sorted) it then combines it with another list and sorts it, it combines all sorted lists together until it has all items together again using recursion. The way that it combines them is it compares the frist two elements of the list, the smaller goes in a new list, then it compares the first two items of the lists with one of the lists missing the first item (the one already in the new list) it does this until both lists are empty 
+Describe in words how the Quick Sort algorithm works. 
+    quicksort chooses a random item in the list as the pivot. it then looks at all other items and puts them below if theyre smaller and above if theyre bigger thus placing the pivot in the correct place in the index. it can then do the same thing on the upper and lower lists, thus splitting sorting every time.
+
